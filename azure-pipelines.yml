@@ -56,8 +56,7 @@ steps:
 
 - task: WhiteSource Bolt@20
   displayName: 'Run WhiteSource Bolt'
-  condition: |
-  and
+  condition: and
   (
     succeeded(),
     eq(variables['Build.Reason'], 'PullRequest'),
